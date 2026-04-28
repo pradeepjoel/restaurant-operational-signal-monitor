@@ -6,6 +6,12 @@ import pandas as pd
 import pydeck as pdk
 import streamlit as st
 
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT_DIR))
+
 from src.config import get_settings
 from src.db import connect, init_db
 
