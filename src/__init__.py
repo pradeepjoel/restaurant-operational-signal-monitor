@@ -1,0 +1,2 @@
+"""Restaurant status scraper package."""
+
